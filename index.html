@@ -1,0 +1,713 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>OM-1 水中撮影ガイド</title>
+<meta name="description" content="UH-OM1 II ハウジング + FLP-09 フラットポート + UMG-01 マグニファイヤーで OM-1 を海に持っていくときのセッティング・注意点・操作方法のまとめ。">
+<meta name="theme-color" content="#04324d">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="top">
+  <div class="wrap">
+    <div class="header-row">
+      <div>
+        <p class="eyebrow">DIVE FIELD GUIDE</p>
+        <h1>OM-1 水中撮影ガイド</h1>
+        <p class="sub">UH-OM1 II ハウジング ／ FLP-09 フラットポート（90mmマクロ）／ UMG-01 マグニファイヤー</p>
+      </div>
+      <button class="theme-btn" type="button" id="themeBtn" aria-label="表示テーマを切り替え">テーマ</button>
+    </div>
+    <div class="keyfacts">
+      <div class="keyfact"><b class="num">45m</b><span>システムの耐圧上限<br>（ハウジングに合わせる）</span></div>
+      <div class="keyfact"><b class="num">約3分</b><span>バキューム分析<br>→ 緑点滅でOK</span></div>
+      <div class="keyfact"><b class="num">3秒→30秒→3分</b><span>水没チェックの<br>沈める時間</span></div>
+      <div class="keyfact"><b class="num">約1.5h / 約4日</b><span>MFU満充電時間 /<br>1回の充電で使える日数</span></div>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="目次">
+  <ul>
+    <li><a href="#gear">機材</a></li>
+    <li><a href="#packing">持ち物</a></li>
+    <li><a href="#prep">前日準備</a></li>
+    <li><a href="#setup">セッティング</a></li>
+    <li><a href="#leds">ランプ早見表</a></li>
+    <li><a href="#controls">操作部</a></li>
+    <li><a href="#dive">水中の注意</a></li>
+    <li><a href="#after">ダイビング後</a></li>
+    <li><a href="#trouble">トラブル</a></li>
+    <li><a href="#sources">出典</a></li>
+  </ul>
+</nav>
+
+<main class="wrap">
+
+<!-- ========== 1. 機材 ========== -->
+<section id="gear">
+  <div class="sec-head"><span class="no">1</span><h2>機材構成</h2></div>
+  <p class="lead">今回の組み合わせ。FLP-09 は M.ZUIKO DIGITAL ED 90mm F3.5 Macro IS PRO 専用のポートです。</p>
+
+  <div class="grid three">
+    <article class="card gear">
+      <figure class="photo thumb"><img src="assets/img/product/10561_uh-om1_ii-1.webp" alt="UH-OM1 II ハウジング正面" loading="lazy" width="500" height="500"></figure>
+      <span class="code">AOI #10561</span>
+      <h3>UH-OM1 II ハウジング</h3>
+      <p class="small">PENマウント／ポリカーボネート製／1,079g。バキュームセンサー・ウェットセンサー・フラッシュトリガーを1つにまとめた「マルチファンクションユニット」を内蔵。</p>
+    </article>
+    <article class="card gear">
+      <figure class="photo thumb"><img src="assets/img/product/21558_flp-09_2.webp" alt="FLP-09 をハウジングに装着した状態" loading="lazy" width="500" height="500"></figure>
+      <span class="code">AOI #21558</span>
+      <h3>FLP-09 PENマウントフラットポート</h3>
+      <p class="small">90mm Macro PRO 専用。中間ポートなしでハウジングに直接付きます。ポートのノブでマニュアルフォーカス、Fnボタン、フォーカスエリア切替などを操作できます。</p>
+    </article>
+    <article class="card gear">
+      <figure class="photo thumb"><img src="assets/img/product/21352_umg-01.webp" alt="UMG-01 マグニファイヤー" loading="lazy" width="500" height="500"></figure>
+      <span class="code">AOI #21352</span>
+      <h3>UMG-01 マグニファイヤー</h3>
+      <p class="small">背面のLCDを水中で約2.3倍に拡大して見せる。一体型のゴムフードで反射を抑え、接眼部の視度調整リングで自分の目に合わせられます。</p>
+    </article>
+  </div>
+
+  <div class="card">
+    <h3>スペック比較</h3>
+    <div class="table-scroll">
+      <table>
+        <thead><tr><th></th><th>UH-OM1 II</th><th>FLP-09</th><th>UMG-01</th></tr></thead>
+        <tbody>
+          <tr><th>耐圧水深</th><td class="hl">45m</td><td>60m</td><td>100m</td></tr>
+          <tr><th>重量</th><td class="num">1,079g</td><td class="num">328g</td><td class="num">178g</td></tr>
+          <tr><th>サイズ</th><td>W196×H130×D150mm</td><td>L113×W92×H136mm</td><td>W76×H93×D78mm</td></tr>
+          <tr><th>材質</th><td>ポリカーボネート</td><td>ポリカーボネート、グラスファイバー</td><td>光学ガラス＋マルチコート、耐食アルミ合金、合成ゴム</td></tr>
+          <tr><th>付属品</th><td>下の「持ち物」参照</td><td>フロントキャップ LFC-01、リアポートキャップ PRC-01、フォーカスクラッチブロッキングリング FCBR-01</td><td>ストラップ QRL-01、アイピースキャップ</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <span class="label">耐圧水深は 45m まで</span>
+      <p>組み合わせた機材のうち、もっとも浅いハウジング（45m）が全体の上限になります。ポート（60m）やマグニファイヤー（100m）の数字に合わせないこと。</p>
+    </div>
+    <p class="small">重量の合計（ハウジング＋ポート＋マグニファイヤー）は約 1,585g です。カメラとレンズの重さは含みません。</p>
+  </div>
+</section>
+
+<!-- ========== 2. 持ち物 ========== -->
+<section id="packing">
+  <div class="sec-head"><span class="no">2</span><h2>持ち物チェック</h2></div>
+  <p class="lead">チェックはこの端末のブラウザに保存されます。出発前に使い、帰宅したら「リセット」してください。</p>
+
+  <div class="card" data-checklist="pack">
+    <div class="list-head"><h3>ハウジング関連（UH-OM1 II 付属品）</h3><span class="progress"></span></div>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-key="pack-housing"><span>ハウジング本体＋ボディキャップ<span class="why">ボディキャップは中が小物入れになっています</span></span></label></li>
+      <li><label><input type="checkbox" data-key="pack-pump"><span>バキュームポンプ VP-03<span class="why">これがないと陸上での密閉チェック（バキューム分析）ができません</span></span></label></li>
+      <li><label><input type="checkbox" data-key="pack-usb"><span>USB Type-C 充電ケーブル＋USB充電器<span class="why">マルチファンクションユニットの充電用。急速充電（PD）には対応していません</span></span></label></li>
+      <li><label><input type="checkbox" data-key="pack-hsc"><span>ホットシューコネクター HSC-02<span class="why">光ファイバーで外部ストロボを光らせるのに必要です</span></span></label></li>
+      <li><label><input type="checkbox" data-key="pack-oring"><span>スペアOリング（本体用 SOR-04／バキュームバルブ用）</span></label></li>
+      <li><label><input type="checkbox" data-key="pack-grease"><span>シリコングリス SIGR-05<span class="why">付属品以外のグリスを使うとOリングが膨らみ、防水性が落ちます</span></span></label></li>
+      <li><label><input type="checkbox" data-key="pack-remover"><span>Oリングリムーバー</span></label></li>
+      <li><label><input type="checkbox" data-key="pack-silica"><span>シリカゲル</span></label></li>
+      <li><label><input type="checkbox" data-key="pack-cloth"><span>クリーニングクロス／ストラップ</span></label></li>
+      <li><label><input type="checkbox" data-key="pack-hood"><span>LCDモニターフード（UMG-01 を使わない日用）</span></label></li>
+      <li><label><input type="checkbox" data-key="pack-fiber"><span>光ファイバーケーブル（ストロボを使う場合）<span class="why">推奨品：SEA&amp;SEA 光ファイバーケーブルII（S #50135／M #50128／L #50133・2コネクター）</span></span></label></li>
+    </ul>
+  </div>
+
+  <div class="grid two">
+    <div class="card" data-checklist="pack2">
+      <div class="list-head"><h3>ポート・レンズ</h3><span class="progress"></span></div>
+      <ul class="checklist">
+        <li><label><input type="checkbox" data-key="pack-flp09"><span>FLP-09 フラットポート</span></label></li>
+        <li><label><input type="checkbox" data-key="pack-caps"><span>フロントキャップ LFC-01／リアポートキャップ PRC-01</span></label></li>
+        <li><label><input type="checkbox" data-key="pack-fcbr"><span>専用ラバーリング FCBR-01<span class="why">レンズのフォーカスクラッチを止めるリング。セッティングで必ず使います</span></span></label></li>
+        <li><label><input type="checkbox" data-key="pack-lens"><span>M.ZUIKO DIGITAL ED 90mm F3.5 Macro IS PRO</span></label></li>
+      </ul>
+    </div>
+    <div class="card" data-checklist="pack3">
+      <div class="list-head"><h3>マグニファイヤー・カメラ</h3><span class="progress"></span></div>
+      <ul class="checklist">
+        <li><label><input type="checkbox" data-key="pack-umg"><span>UMG-01＋ストラップ QRL-01＋アイピースキャップ</span></label></li>
+        <li><label><input type="checkbox" data-key="pack-cam"><span>OM-1 本体</span></label></li>
+        <li><label><input type="checkbox" data-key="pack-batt"><span>カメラのバッテリー（充電済み）／予備</span></label></li>
+        <li><label><input type="checkbox" data-key="pack-card"><span>メモリーカード（空き容量を確認）</span></label></li>
+      </ul>
+    </div>
+  </div>
+  <p><button class="btn" type="button" data-reset="pack pack2 pack3">持ち物チェックをリセット</button></p>
+
+  <div class="callout note">
+    <span class="label">飛行機で移動するとき</span>
+    <p>本体のOリングを外しておくのがおすすめです。気圧の変化でハウジングが開かなくなることがあり、無理に開けると本体の破損やケガにつながります。</p>
+  </div>
+</section>
+
+<!-- ========== 3. 前日準備 ========== -->
+<section id="prep">
+  <div class="sec-head"><span class="no">3</span><h2>前日までの準備</h2></div>
+
+  <div class="card">
+    <h3>マルチファンクションユニット（MFU）を充電する</h3>
+    <div class="grid two">
+      <div>
+        <ol>
+          <li>ハウジング内側のMFUの電源を入れる。</li>
+          <li>付属の USB Type-C ケーブルでMFUのUSBポートと充電器をつなぐ。</li>
+          <li>満充電まで<strong>約1.5時間</strong>。</li>
+        </ol>
+        <p>1回の充電で<strong>約4日</strong>使えます（1日3ダイブ、1ダイブ約1時間で計算）。ランプの見方は<a href="#led-charge">充電ランプ早見表</a>。</p>
+      </div>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/fig-charge.png" alt="MFUにUSBケーブルを接続する図" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.9 図7</figcaption>
+      </figure>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>Oリングのメンテナンス</h3>
+    <p class="small">ハウジングを開け閉めするたびに毎回やります。</p>
+    <ol>
+      <li>Oリングリムーバーを Oリングと溝のあいだに差し込み、先端で引っかけて外す。</li>
+      <li>Oリングと溝についた砂・塩・古いグリスを取る。溝は綿棒を使うと掃除しやすい。</li>
+      <li>指と目で傷やひび割れがないか確かめる。<strong>あれば新しいOリングに交換。</strong></li>
+      <li>付属のシリコングリスを<strong>米粒くらい</strong>指先に取り、3本の指で挟むようにして全体に薄く均一に塗る。強く引っ張らない。</li>
+      <li>ねじれたり、はみ出したりしないように溝にはめる。</li>
+    </ol>
+    <div class="callout note">
+      <span class="label">なぜグリスを塗るのか</span>
+      <p>グリス自体に防水性はありません。ただ、量が少ないとOリングが溝の中で部分的にねじれ、そこから浸水します。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>空のハウジングで浸水テスト</h3>
+    <p>カメラを入れる前に、空のハウジングを実際に潜る水深まで沈め、浸水しないか確かめます。出荷前に耐圧検査はされていますが、輸送中のトラブルはありえるためです。その水深まで沈められなくても、浅いところで必ず実施してください。</p>
+    <p class="small">浸水の主な原因：Oリングの付け忘れ／溝に正しくはまっていない／Oリングの傷・ひび・変形／溝や接触面の砂・髪の毛／接触面や溝の傷／カメラの位置ずれ／ストラップや除湿剤の挟み込み</p>
+  </div>
+
+  <div class="card">
+    <h3>90mmマクロ（FLP-09用）の事前準備</h3>
+    <div class="grid two">
+      <div>
+        <ol>
+          <li>レンズに<strong>専用ラバーリング（FCBR-01）</strong>をはめる（図 a→b）。</li>
+          <li>フォーカスリングは「AF/MFポジション」（レンズ先端側、距離目盛が見えない位置）にしておく。カメラ側に引くと「MFポジション」（距離目盛が見える）になります。</li>
+          <li>カメラのメニューで<strong>「MFクラッチ」を「無効」</strong>にする（AFメニューの MF 項目）。</li>
+          <li>スーパーコンパネで<strong>「フォーカス設定」を「MF」</strong>にする。</li>
+        </ol>
+        <div class="callout note">
+          <span class="label">補足（説明書には書かれていない推測です）</span>
+          <p>ラバーリングでクラッチを止め、MFクラッチを無効にしておくと、水中でクラッチが勝手に動いてフォーカスの挙動が変わる心配がなくなります。そのうえで、ポートのノブでピントリングを回してマニュアルフォーカスします。</p>
+        </div>
+      </div>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/flp09-prep.jpg" alt="ラバーリングの装着とカメラ設定の図" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-flp09">FLP-09 取付方法</a>【事前準備】【カメラ設定】</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ========== 4. セッティング ========== -->
+<section id="setup">
+  <div class="sec-head"><span class="no">4</span><h2>セッティング手順</h2></div>
+  <p class="lead">当日、カメラをハウジングに入れて水に入るまでの流れ。各ステップの「済」にチェックすると進み具合が残ります。</p>
+  <div class="callout warn">
+    <span class="label">場所を選ぶ</span>
+    <p>砂やほこりが多い場所では開け閉めしないこと。異物がOリングに付くと浸水の原因になります。直射日光の当たる場所に置いておくのも避けます。中が温まった状態で水に入れると、急な温度変化で結露するためです。</p>
+  </div>
+
+  <p class="phase">ハウジングを開ける</p>
+  <ol class="steps" data-steps="setup">
+    <li>
+      <div class="step-title"><h3>ボディキャップを外す</h3><label class="done-toggle"><input type="checkbox" data-key="s-bodycap">済</label></div>
+      <p>ポートリリースボタンを押しながら、ボディキャップを<strong>反時計回りに約90°</strong>回して引き抜きます（図1・2）。</p>
+      <p class="small">ボディキャップは小物入れになっています。土台を持って側面のラッチを押し下げ、上のキャップを反時計回りに約30°回すと開きます（図3・4）。</p>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/fig-bodycap.png" alt="ボディキャップの外し方 図1〜4" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.8 図1〜4</figcaption>
+      </figure>
+    </li>
+    <li>
+      <div class="step-title"><h3>ハウジングを開ける</h3><label class="done-toggle"><input type="checkbox" data-key="s-open">済</label></div>
+      <p>ロータリーバックルのセキュリティロックを矢印の方向にスライドして解除し（図5）、ロータリーバックルを押しながら<strong>時計回り</strong>に回します（図6）。リアケースが開いてバックルから完全に外れるまで回します。</p>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/fig-open.png" alt="セキュリティロックの解除とロータリーバックル 図5・6" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.8 図5・6</figcaption>
+      </figure>
+    </li>
+    <li>
+      <div class="step-title"><h3>Oリングを点検する</h3><label class="done-toggle"><input type="checkbox" data-key="s-oring">済</label></div>
+      <p>Oリング、溝、Oリングが当たる面を指でなぞり、目でも見て、砂・髪の毛・傷がないか確認します。手順は<a href="#prep">前日準備のOリングメンテナンス</a>と同じです。</p>
+    </li>
+  </ol>
+
+  <p class="phase">カメラを入れる</p>
+  <ol class="steps" data-steps="setup" start="4" style="counter-reset: step 3">
+    <li>
+      <div class="step-title"><h3>カメラとレンズを準備する</h3><label class="done-toggle"><input type="checkbox" data-key="s-campre">済</label></div>
+      <ul>
+        <li>ストラップ、アイキャップなどのアクセサリーを外す。</li>
+        <li>レンズにラバーリング FCBR-01 を付け、MFクラッチ「無効」、フォーカス「MF」（<a href="#prep">前日準備</a>参照）。</li>
+        <li>バッテリーとメモリーカードを確認する。</li>
+        <li><strong>カメラの電源を切る。</strong></li>
+      </ul>
+    </li>
+    <li>
+      <div class="step-title"><h3>カメラを装填する</h3><label class="done-toggle"><input type="checkbox" data-key="s-load">済</label></div>
+      <ol>
+        <li>ハウジング内側の<strong>カメラON/OFFレバーを引き上げる</strong>（図8-①）。</li>
+        <li>モニターを外側に向け、ストラップの吊り環が折りたたまれているのを確かめる（図9）。</li>
+        <li>カメラをゆっくり差し込む。<strong>モニターを持って押し込まない</strong>こと。</li>
+        <li>カメラON/OFFレバーを手前に回し、押してから差し込む（図8-②）。</li>
+      </ol>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/fig-load.png" alt="カメラON/OFFレバーとカメラの装填 図8・9" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.10 図8・9</figcaption>
+      </figure>
+    </li>
+    <li>
+      <div class="step-title"><h3>ホットシューコネクターをつなぐ（ストロボを使う場合）</h3><label class="done-toggle"><input type="checkbox" data-key="s-hsc">済</label></div>
+      <p>カメラのホットシューとMFUのUSBポートを HSC-02 でつなぎ（図10）、MFUの電源を入れます（図11）。</p>
+      <p>カメラのコントロールパネルのフラッシュモードを見て、<strong>フラッシュマークが点灯していれば接続完了</strong>。灰色ならつながっていないので、やり直します。</p>
+      <div class="grid two">
+        <figure>
+          <div class="img"><img class="zoomable" src="assets/img/manual/fig-hotshoe.png" alt="ホットシューコネクターの接続とMFUの電源 図10・11" loading="lazy"></div>
+          <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.11 図10・11</figcaption>
+        </figure>
+        <figure class="photo">
+          <div class="img"><img class="zoomable" src="assets/img/product/10561_uh-om1_ii-15.webp" alt="ホットシューコネクターでカメラとハウジングを接続した写真" loading="lazy"></div>
+          <figcaption>出典：<a href="#src-housing">UH-OM1 II 製品ページ</a></figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <div class="step-title"><h3>ハウジングを閉じる</h3><label class="done-toggle"><input type="checkbox" data-key="s-close">済</label></div>
+      <ol>
+        <li>カメラが正しく収まっているか、Oリングと接触面にゴミがないかを確かめる。</li>
+        <li>リアケースを閉じ、<strong>「カチッ」と鳴るまで</strong>ロータリーバックルを<strong>反時計回り</strong>に回す。</li>
+        <li>セキュリティロックを「ロック」位置にする（図12）。</li>
+      </ol>
+      <div class="callout danger">
+        <span class="label">注意</span>
+        <p>閉じたあと、Oリングを何か挟んでいないか、<strong>全周を見渡して</strong>確認します。</p>
+      </div>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/fig-close.png" alt="セキュリティロックをロック位置にする 図12" loading="lazy" style="max-width:280px"></div>
+        <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.11 図12</figcaption>
+      </figure>
+    </li>
+    <li>
+      <div class="step-title"><h3>操作系の動作確認</h3><label class="done-toggle"><input type="checkbox" data-key="s-check">済</label></div>
+      <p>カメラの電源を入れ、すべてのスイッチ、ダイヤル、ギアが正しく効くか確かめます。</p>
+    </li>
+  </ol>
+
+  <p class="phase">ポートとマグニファイヤーを付ける</p>
+  <ol class="steps" data-steps="setup" style="counter-reset: step 8">
+    <li>
+      <div class="step-title"><h3>FLP-09 を取り付ける</h3><label class="done-toggle"><input type="checkbox" data-key="s-port">済</label></div>
+      <ol>
+        <li>ポートとハウジングの<strong>○マークを合わせ</strong>、奥まで押し込む。</li>
+        <li><strong>「カチッ」と鳴るまで時計回り</strong>に回す。</li>
+        <li>ポートリリースボタンが持ち上がればロック完了。</li>
+      </ol>
+      <div class="grid two">
+        <figure>
+          <div class="img"><img class="zoomable" src="assets/img/manual/flp09-attach.jpg" alt="FLP-09 レンズポートの取り付け方" loading="lazy"></div>
+          <figcaption>出典：<a href="#src-flp09">FLP-09 取付方法</a>「レンズポートの取り付け方」</figcaption>
+        </figure>
+        <figure>
+          <div class="img"><img class="zoomable" src="assets/img/manual/fig-port.png" alt="レンズポートの取り付け 図13" loading="lazy"></div>
+          <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.12 図13</figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <div class="step-title"><h3>UMG-01 を取り付けて視度を合わせる</h3><label class="done-toggle"><input type="checkbox" data-key="s-umg">済</label></div>
+      <ol>
+        <li>純正のLCDモニターフードを外し、UMG-01 を<strong>下側のレール → 上側のレール</strong>の順にはめ込む。</li>
+        <li>LCDを覗きながら視度調整リングを左右に回し、AF枠や文字がいちばんくっきり見える位置にする。</li>
+        <li>合ったらロックリングを止まるところまで回して固定する。一度ロックすれば次回からは調整不要。</li>
+        <li>落下防止のため付属ストラップを付ける。</li>
+      </ol>
+      <div class="callout note">
+        <span class="label">視度は水中で合わせるのがベスト</span>
+        <p>マスクを着けた水中では、陸上と見え方が変わることがあります。</p>
+      </div>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/umg-adjust.jpg" alt="UMG マグニファイヤーの調整方法 1〜3" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-umg">UMG マグニファイヤー 調整方法</a>（写真ははめ込み画像。図のハウジングは別機種）</figcaption>
+      </figure>
+    </li>
+  </ol>
+
+  <p class="phase">密閉チェック</p>
+  <ol class="steps" data-steps="setup" style="counter-reset: step 10">
+    <li>
+      <div class="step-title"><h3>バキュームで密閉を確かめる</h3><label class="done-toggle"><input type="checkbox" data-key="s-vac">済</label></div>
+      <ol>
+        <li>MFUの電源を入れる → ランプが<span class="led blue blink-1hz" style="display:inline-block;width:12px;height:12px;vertical-align:-1px"></span> 青点滅（1回/秒）になる。</li>
+        <li>バキュームバルブの保護キャップを外し、赤いバルブ先端にポンプ VP-03 をつなぐ。</li>
+        <li>ポンプのハンドルを<strong>ゆっくり</strong>くり返し引く（図1）。ランプは黄点滅 → ゆっくりな黄点滅 → 黄点灯と変わる。</li>
+        <li><strong>黄点灯になったらポンプを止める</strong>。分析が自動で始まる。</li>
+        <li>ポンプを慎重に外し、保護キャップを戻す（図3）。</li>
+        <li>約3分待つ。この間ハウジングを激しく動かしたり、日なたに置いたりしない。</li>
+        <li><span class="led green blink-1hz" style="display:inline-block;width:12px;height:12px;vertical-align:-1px"></span> 緑点滅になればOK。</li>
+      </ol>
+      <div class="flow" aria-label="バキューム分析のランプの流れ">
+        <div class="node"><b><span class="led blue blink-1hz"></span>青 1回/秒</b>準備完了 → 排気開始</div>
+        <div class="node"><b><span class="led yellow blink-mid"></span>黄 点滅</b>吸い出し中</div>
+        <div class="node"><b><span class="led yellow blink-slow"></span>黄 ゆっくり</b>もう少し。ポンプをゆっくりに</div>
+        <div class="node"><b><span class="led yellow"></span>黄 点灯</b>止める → 約3分分析</div>
+        <div class="node"><b><span class="led green blink-1hz"></span>緑 1回/秒</b>OK、水中で使える</div>
+      </div>
+      <p class="small">黄と赤の交互点滅は吸いすぎ。赤いバルブキャップを反時計回りに回して黄点灯まで空気を戻します。戻しすぎて黄点滅に戻ったら、黄点灯までもう一度ポンプで抜きます（図2）。ほかの表示は<a href="#leds">ランプ早見表</a>へ。</p>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/fig-vacuum.png" alt="バキュームポンプの接続と空気の調整 図1〜3" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.13 図1〜3</figcaption>
+      </figure>
+      <div class="grid two">
+        <figure class="photo">
+          <div class="img"><img class="zoomable" src="assets/img/product/10561_uh-om1_ii-12.webp" alt="バキュームポンプでハウジングの空気を抜く写真" loading="lazy"></div>
+          <figcaption>出典：<a href="#src-housing">UH-OM1 II 製品ページ</a></figcaption>
+        </figure>
+        <figure class="photo">
+          <div class="img"><img class="zoomable" src="assets/img/product/10561_uh-om1_ii-16.webp" alt="折りたたみ式バキュームポンプ VP-03" loading="lazy"></div>
+          <figcaption>VP-03（折りたためる）　出典：<a href="#src-housing">UH-OM1 II 製品ページ</a></figcaption>
+        </figure>
+      </div>
+    </li>
+    <li>
+      <div class="step-title"><h3>陸上で 30分〜1時間 置いて再確認</h3><label class="done-toggle"><input type="checkbox" data-key="s-wait">済</label></div>
+      <p>3分の分析でOKでも、ケバや異物の付着・挟み込みがあると浸水することがあります。OK後に陸上で30分〜1時間置き、赤点滅（NG）にならないかを見るのが推奨されています。</p>
+      <div class="timer" data-timer>
+        <span class="display num">00:00</span>
+        <div class="presets">
+          <button class="btn" type="button" data-sec="1800">30分</button>
+          <button class="btn" type="button" data-sec="3600">60分</button>
+          <button class="btn" type="button" data-stop>停止</button>
+        </div>
+        <p class="timer-label">終わると音と振動で知らせます（ページを開いたままにしてください）</p>
+      </div>
+    </li>
+    <li>
+      <div class="step-title"><h3>水に沈めて最終チェック</h3><label class="done-toggle"><input type="checkbox" data-key="s-dunk">済</label></div>
+      <ol>
+        <li>水を張ったカメラ洗い桶（なければ水面）に、ハウジングを<strong>水平にしてゆっくり</strong>沈める。</li>
+        <li>まず<strong>3秒</strong>。本体から泡が上がらないか見る。Oリングの付け忘れや挟み込みがあると、3秒でも浸水します。</li>
+        <li>続けて<strong>30秒</strong>、<strong>3分</strong>と同じように確かめる。</li>
+        <li>水中でボタン・スイッチ・ダイヤルをすべて動かし、中に水滴が出ないことを確かめる。</li>
+        <li>泡が続けて上がる場合は使うのをやめ、Oリングを点検し直す。</li>
+      </ol>
+      <div class="timer" data-timer>
+        <span class="display num">00:00</span>
+        <div class="presets">
+          <button class="btn" type="button" data-sec="3">3秒</button>
+          <button class="btn" type="button" data-sec="30">30秒</button>
+          <button class="btn" type="button" data-sec="180">3分</button>
+          <button class="btn" type="button" data-stop>停止</button>
+        </div>
+      </div>
+      <p class="small">ダイビング中は真空（陰圧）状態のまま使います。センサーが圧力の変化をずっと監視しているためです。</p>
+    </li>
+  </ol>
+  <p><button class="btn" type="button" data-reset-steps="setup">手順のチェックをリセット</button></p>
+</section>
+
+<!-- ========== 5. LED ========== -->
+<section id="leds">
+  <div class="sec-head"><span class="no">5</span><h2>インジケーター早見表</h2></div>
+  <p class="lead">MFUのランプの点き方を再現しています。点滅の速さは説明書の記載（1回/秒、4回/秒）に合わせ、記載がないものは見分けやすい速さにしてあります。</p>
+  <p><button class="btn" type="button" id="ledPause">点滅を止める</button></p>
+
+  <div class="card" id="led-vacuum">
+    <h3>バキューム／ウェットセンサー</h3>
+    <div class="table-scroll">
+      <table class="led-table">
+        <thead><tr><th>ランプ</th><th>状態</th><th>やること</th></tr></thead>
+        <tbody>
+          <tr><td><div class="led-cell"><span class="led blue blink-1hz"></span><span class="led-name">青 点滅<span class="led-pattern">1回/秒</span></span></div></td><td>真空分析の準備完了</td><td>排気を始める</td></tr>
+          <tr><td><div class="led-cell"><span class="led blue blink-5s"></span><span class="led-name">点滅<span class="led-pattern">5秒に1回</span></span></div></td><td>スタンバイ（10分以上操作なし）</td><td>—</td></tr>
+          <tr><td><div class="led-cell"><span class="led yellow blink-mid"></span><span class="led-name">黄 点滅</span></div></td><td>真空が足りない（吸い出し中）</td><td>ポンプを続ける</td></tr>
+          <tr><td><div class="led-cell"><span class="led yellow blink-slow"></span><span class="led-name">黄 ゆっくり点滅</span></div></td><td>吸い出し完了まであと少し</td><td>ポンプをゆっくりにする</td></tr>
+          <tr><td><div class="led-cell"><span class="led yellow"></span><span class="led-name">黄 点灯</span></div></td><td>吸い出し完了／分析中</td><td>ポンプを止めて外し、キャップを戻して<strong>約3分</strong>待つ</td></tr>
+          <tr class="row-ok"><td><div class="led-cell"><span class="led green blink-1hz"></span><span class="led-name">緑 点滅<span class="led-pattern">1回/秒</span></span></div></td><td><strong>分析OK</strong></td><td>水中で使える</td></tr>
+          <tr><td><div class="led-cell"><span class="led alt-yr"></span><span class="led-name">黄と赤 交互点滅</span></div></td><td>真空が強すぎる</td><td>赤いバルブキャップを反時計回りに回し、黄点灯まで空気を入れる</td></tr>
+          <tr class="row-ng"><td><div class="led-cell"><span class="led red blink-4hz"></span><span class="led-name">赤 点滅<span class="led-pattern">4回/秒</span></span></div></td><td><strong>分析NG</strong></td><td>ケバ・異物の付着、挟み込みがないかセッティングを確認</td></tr>
+          <tr class="row-ng"><td><div class="led-cell"><span class="led alt-rb"></span><span class="led-name">赤と青 交互点滅</span></div></td><td>大きな空気漏れを検出</td><td>防水性・Oリングの密閉を確認</td></tr>
+          <tr class="row-ng"><td><div class="led-cell"><span class="led red"></span><span class="buzz">BEEP</span><span class="led-name">赤 点灯＋ブザー</span></div></td><td><strong>ウェットセンサーが水を検出</strong></td><td>すぐに浮上・使用中止。水漏れ箇所を調べる（<a href="#trouble">トラブル</a>）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small">スタンバイ時の色は説明書に記載がないため、ここでは青で表示しています。</p>
+  </div>
+
+  <div class="card" id="led-charge">
+    <h3>充電</h3>
+    <div class="table-scroll">
+      <table class="led-table">
+        <thead><tr><th>ランプ</th><th>状態</th><th>やること</th></tr></thead>
+        <tbody>
+          <tr><td><div class="led-cell"><span class="led blue blink-4hz"></span><span class="led-name">青 高速点滅<span class="led-pattern">4回/秒</span></span></div></td><td>充電が必要</td><td>USB充電器につなぐ</td></tr>
+          <tr><td><div class="led-cell"><span class="led green blink-4hz"></span><span class="led-name">緑 高速点滅<span class="led-pattern">4回/秒</span></span></div></td><td>充電中</td><td>そのまま充電を続ける</td></tr>
+          <tr class="row-ok"><td><div class="led-cell"><span class="led green blink-1hz"></span><span class="led-name">緑 点滅</span></div></td><td>充電完了</td><td>充電器から外す</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <span class="label">緑点滅が2つの意味を持つ</span>
+      <p>「緑点滅」は充電完了とバキュームOKのどちらでも出ます。充電ケーブルがつながっているかどうかで見分けてください。</p>
+    </div>
+  </div>
+
+  <figure class="photo">
+    <div class="img"><img class="zoomable" src="assets/img/product/10561_uh-om1_ii-14.webp" alt="マルチファンクションユニット。右がスイッチ、中央がインジケーター、左が充電用USB Type-Cポート" loading="lazy"></div>
+    <figcaption>マルチファンクションユニット（右：スイッチ／中央：インジケーター／左：充電用USB Type-Cポート）　出典：<a href="#src-housing">UH-OM1 II 製品ページ</a></figcaption>
+  </figure>
+</section>
+
+<!-- ========== 6. 操作部 ========== -->
+<section id="controls">
+  <div class="sec-head"><span class="no">6</span><h2>操作部の配置</h2></div>
+
+  <div class="card">
+    <h3>持ち方</h3>
+    <p>グリップのないハウジングなので、本体を直接持って指先で操作します。</p>
+    <div class="grip">
+      <div><b>右手 親指</b>リアダイヤル</div>
+      <div><b>右手 人差し指</b>シャッターレバー</div>
+      <div><b>右手 中指</b>フロントダイヤル</div>
+    </div>
+    <figure class="photo">
+      <div class="img"><img class="zoomable" src="assets/img/product/10532_uh-om1_13.webp" alt="ハウジングを右手で持って操作している写真" loading="lazy"></div>
+      <figcaption>出典：<a href="#src-housing">UH-OM1 II 製品ページ</a>（UH-OM1 の写真）</figcaption>
+    </figure>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>前面</h3>
+      <figure><div class="img"><img class="zoomable" src="assets/img/manual/parts-front.png" alt="ハウジング前面の各部名称" loading="lazy"></div>
+      <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.6</figcaption></figure>
+      <ul class="parts">
+        <li>AF-ONボタンレバー</li><li>シャッターレバー</li><li>フロントダイヤル</li><li>ビデオボタン</li><li>＋／−ボタン</li><li>ロックボタン</li><li>バキュームバルブ</li><li>光ファイバーソケット</li><li>セキュリティロック</li><li>ロータリーバックル</li><li>ロータリーバックルロック</li><li>ストラップホール</li><li>ポートリリースボタン</li><li>ボディキャップ</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>上面・右側</h3>
+      <figure><div class="img"><img class="zoomable" src="assets/img/manual/parts-top.png" alt="ハウジング上面・右側の各部名称" loading="lazy"></div>
+      <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.6</figcaption></figure>
+      <ul class="parts">
+        <li>シャッターボタン</li><li>電源レバー</li><li>AFボタン</li><li>フォーカス／ズームダイヤル</li><li>露出補正ダイヤル</li><li>レンズリリースボタン</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>背面</h3>
+      <figure><div class="img"><img class="zoomable" src="assets/img/manual/parts-back.png" alt="ハウジング背面の各部名称" loading="lazy"></div>
+      <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.7</figcaption></figure>
+      <ul class="parts">
+        <li>LVボタン</li><li>MENUボタン</li><li>モードダイヤル</li><li>AELレバー</li><li>FNレバー</li><li>リアダイヤル</li><li>ISOボタン</li><li>十字ボタン（↑↓←→）</li><li>INFOボタン</li><li>再生ボタン</li><li>削除ボタン</li><li>LCDモニターフード用レール／通し穴</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>内側</h3>
+      <figure><div class="img"><img class="zoomable" src="assets/img/manual/parts-inside.png" alt="ハウジング内側の各部名称" loading="lazy"></div>
+      <figcaption>出典：<a href="#src-manual">UH-OM1 II 取扱説明書</a> p.7</figcaption></figure>
+      <ul class="parts">
+        <li>本体Oリング</li><li>カメラON/OFFレバー</li><li>マルチファンクションユニット</li><li>MFUインジケーター</li><li>USBポート</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ストロボ接続</h3>
+    <p>MFUにフラッシュトリガーが入っています。カメラのホットシューの信号を HSC-02 経由でMFUが受け、光信号に変えて光ファイバーケーブルで外部ストロボへ送ります。MFUの電源で光るので、カメラのバッテリーを節約できます。</p>
+    <ul>
+      <li>光ファイバーソケットは2つ。外部ストロボは<strong>2灯まで</strong>。</li>
+      <li>OM SYSTEM の「ワイヤレスRCフラッシュシステム」に対応。RCモードのある水中ストロボなら、カメラ側から光量を制御できます。</li>
+      <li>MFUとカメラをつないでいると、カメラのスリープに合わせてMFUもスリープし、カメラが起きるとMFUも起きます（オートスリーピングモード）。</li>
+      <li>光ファイバーソケットは使用後に水で流し、自然乾燥させる。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 7. 水中の注意 ========== -->
+<section id="dive">
+  <div class="sec-head"><span class="no">7</span><h2>エントリー・水中での注意</h2></div>
+  <div class="callout danger">
+    <span class="label">安全第一</span>
+    <p>撮影に夢中になると、重大な潜水事故につながりかねません。水深と潜水時間に十分注意してください。</p>
+  </div>
+  <div class="card" data-checklist="dive">
+    <div class="list-head"><h3>エントリー前の確認</h3><span class="progress"></span></div>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-key="d-green"><span>ランプが緑点滅（バキュームOK）になっている</span></label></li>
+      <li><label><input type="checkbox" data-key="d-cap"><span>バキュームバルブの保護キャップを戻した</span></label></li>
+      <li><label><input type="checkbox" data-key="d-lock"><span>セキュリティロックが「ロック」位置／ポートのロックがかかっている</span></label></li>
+      <li><label><input type="checkbox" data-key="d-frontcap"><span>ポートのフロントキャップを外した（水中で使う直前）</span></label></li>
+      <li><label><input type="checkbox" data-key="d-strap"><span>UMG-01 のストラップを付けた</span></label></li>
+      <li><label><input type="checkbox" data-key="d-shade"><span>日なたに置きっぱなしにしていない<span class="why">中の温度が上がった状態で水に入れると結露します</span></span></label></li>
+    </ul>
+    <p><button class="btn" type="button" data-reset="dive">リセット</button></p>
+  </div>
+  <div class="card">
+    <h3>守ること</h3>
+    <ul>
+      <li><strong>45mより深く潜らない。</strong>浅くても、ぶつけたり押しつけたりすると破損・浸水のおそれがあります。</li>
+      <li>樹脂製なので、岩などにぶつけないこと。</li>
+      <li>ボートダイブでは、<strong>エントリー後に船上から手渡してもらう</strong>。ハウジングを持ったまま飛び込むと一方向に強い水圧がかかり、浸水のリスクが上がります。</li>
+      <li>UMG-01 を持ってハウジングを運ばない。外れて落ちたり、なくしたりするおそれがあります。</li>
+      <li>UMG-01 を通して太陽など強い光を見ない。目を傷めるおそれがあります。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 8. ダイビング後 ========== -->
+<section id="after">
+  <div class="sec-head"><span class="no">8</span><h2>ダイビング後</h2></div>
+
+  <div class="card">
+    <h3>ハウジングの開け方</h3>
+    <div class="callout danger">
+      <span class="label">先に気圧を戻す</span>
+      <p>中が真空（陰圧）のままリアケースを開けようとすると、ロータリーバックルが壊れるおそれがあります。</p>
+    </div>
+    <ol>
+      <li>バキュームバルブの保護キャップを外し、赤いバルブつまみを<strong>反時計回り</strong>に回す。「プシュー」と空気が入る音がすれば気圧が戻っています。</li>
+      <li>保護キャップを元どおり付ける。</li>
+      <li>ロータリーバックルを回してリアケースを開ける。</li>
+    </ol>
+    <p class="small">開けるときは、合わせ目に残った水滴がカメラに垂れないよう注意。髪の毛やウェットスーツからの水滴にも気をつけます。</p>
+  </div>
+
+  <div class="card">
+    <h3>塩抜き（現地）</h3>
+    <ol>
+      <li>真水を張ったカメラ用の洗い桶や洗面器にハウジングを浸ける。</li>
+      <li>真水の中で各レバーやボタンを動かし、塩分を流す。</li>
+      <li><strong>10〜20分</strong>浸けておく。</li>
+      <li>引き上げたら、弱い流水で洗う。<strong>強い水流を一方向から当てない</strong>（浸水の原因になる）。</li>
+      <li>乾いたやわらかい布で水気をよく拭く。</li>
+    </ol>
+    <div class="timer" data-timer>
+      <span class="display num">00:00</span>
+      <div class="presets">
+        <button class="btn" type="button" data-sec="600">10分</button>
+        <button class="btn" type="button" data-sec="1200">20分</button>
+        <button class="btn" type="button" data-stop>停止</button>
+      </div>
+    </div>
+    <div class="callout warn">
+      <span class="label">やってはいけないこと</span>
+      <ul>
+        <li>洗い桶に浸けている間にハウジングを開け閉めする。</li>
+        <li>使ったまま放置する。すき間に残った塩が結晶になると水に溶けにくくなり、Oリングを押し上げて浸水の原因になります。</li>
+        <li>炎天下での直射日光やドライヤーで乾かす。故障・変形・破損の原因になります。</li>
+        <li>真夏の車内など高温の場所に置く。</li>
+        <li>アルコール、ベンジン、シンナーなどの溶剤や化学洗浄剤で拭く。</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid two">
+    <div class="card">
+      <h3>UMG-01</h3>
+      <ul>
+        <li>ハウジングから外して流水でよく洗う。海水で使ったあとは<strong>真水かぬるま湯に2〜3時間</strong>浸け置きするのがおすすめ。</li>
+        <li>レンズの水滴はブロワーで飛ばし、やわらかい布で拭く。水滴を残したまま乾くと跡が残ります。</li>
+        <li>付けたまま放置すると、塩が固まって視度調整が回らなくなることがあります。</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>FLP-09 の外し方</h3>
+      <p>ポートリリースボタンでロックを外し（①）、ポートを押し込みながら（②）回して（③）、引き抜きます（④）。番号は下の図に対応しています。</p>
+      <figure>
+        <div class="img"><img class="zoomable" src="assets/img/manual/flp09-remove.jpg" alt="FLP-09 レンズポートの外し方" loading="lazy"></div>
+        <figcaption>出典：<a href="#src-flp09">FLP-09 取付方法</a>「レンズポートの外し方」</figcaption>
+      </figure>
+      <p class="small">外したポートにはフロントキャップとリアポートキャップを付けておきます。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>帰宅後・保管</h3>
+    <ul>
+      <li>現地の塩抜きだけで終わらせず、<strong>帰宅後にも必ず</strong>手入れをする。</li>
+      <li>長く使わないときは、Oリングに付属のシリコングリスを薄く塗って保管する。</li>
+      <li>長く使わないときはカメラをハウジングから出しておく（電池トラブルで発火するおそれがあるため）。</li>
+      <li>Oリングは<strong>1年ごと</strong>の交換、ハウジングは使用頻度に応じて<strong>2〜3年に1度</strong>のオーバーホールがおすすめ。</li>
+      <li>極端な高温・低温、急な温度変化のある場所や、直射日光の当たる場所に置かない。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 9. トラブル ========== -->
+<section id="trouble">
+  <div class="sec-head"><span class="no">9</span><h2>トラブルのとき</h2></div>
+  <div class="card">
+    <h3><span class="led red" style="display:inline-block;width:14px;height:14px;vertical-align:-1px"></span> 赤点灯＋ブザー（浸水を検出）</h3>
+    <ul>
+      <li>すぐに使用を中止する。</li>
+      <li>浸水していると、中の圧力が上がっていることがあります。開けるときに水が噴き出したり本体が跳ねたりするおそれがあるので、十分注意して開ける。</li>
+    </ul>
+    <figure class="photo" style="max-width:360px">
+      <div class="img"><img class="zoomable" src="assets/img/product/10532_uh-om1_10.webp" alt="ハウジング底部のウェットセンサー" loading="lazy"></div>
+      <figcaption>ハウジング底部のウェットセンサー　出典：<a href="#src-housing">UH-OM1 II 製品ページ</a></figcaption>
+    </figure>
+  </div>
+  <div class="card">
+    <h3>バキューム分析が NG（赤点滅、または赤と青の交互点滅）</h3>
+    <p>以下の項目を確かめて、もう一度テストします。</p>
+    <ul>
+      <li>Oリングの付け忘れ／溝にきちんとはまっているか</li>
+      <li>Oリングの傷・ひび・変形</li>
+      <li>溝や接触面の砂・ゴミ・髪の毛・ケバ、または傷</li>
+      <li>カメラが正しい位置に入っているか</li>
+      <li>ストラップや除湿剤を挟んでいないか</li>
+    </ul>
+    <p>事前テストをしても浸水する場合は、使うのをやめて販売店か株式会社フィッシュアイのカスタマーサービスに相談してください。</p>
+  </div>
+  <div class="card">
+    <h3>ストロボが光らない</h3>
+    <ul>
+      <li>カメラのコントロールパネルのフラッシュマークが灰色なら、ホットシューコネクターがつながっていません。つなぎ直します。</li>
+      <li>MFUの電源が入っているか、充電が残っているか（青の高速点滅は要充電）を確かめます。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========== 出典 ========== -->
+<section id="sources">
+  <div class="sec-head"><span class="no">i</span><h2>出典</h2></div>
+  <div class="card sources">
+    <p>このページの内容は、以下の株式会社フィッシュアイ（AOI 製品の国内販売元）の公開資料をもとに個人用にまとめたものです。製品写真と取扱説明書の図版の著作権は株式会社フィッシュアイと各権利者に帰属します。正確な情報は必ず原典を確認してください。</p>
+    <ul>
+      <li id="src-manual">UH-OM1 II 取扱説明書（20240802 版）<br><a href="https://www.fisheye-jp.com/_userdata/10561_UH-OM1ii.pdf">https://www.fisheye-jp.com/_userdata/10561_UH-OM1ii.pdf</a></li>
+      <li id="src-housing">UH-OM1 II OM SYSTEM OM1/OM1 Mark II 製品ページ<br><a href="https://www.fisheye-jp.com/products/uh-om1ii.html">https://www.fisheye-jp.com/products/uh-om1ii.html</a></li>
+      <li id="src-flp09">FLP-09 PENマウントフラットポート 製品ページ／取付方法（202504 版）<br><a href="https://www.fisheye-jp.com/products/flp-09.html">https://www.fisheye-jp.com/products/flp-09.html</a><br><a href="https://www.fisheye-jp.com/_userdata/21558_FLP-09_Installation.pdf">https://www.fisheye-jp.com/_userdata/21558_FLP-09_Installation.pdf</a></li>
+      <li id="src-umg">UMG-01 マグニファイヤー 製品ページ／調整方法（20230609 版）<br><a href="https://www.fisheye-jp.com/products/umg_01.html">https://www.fisheye-jp.com/products/umg_01.html</a><br><a href="https://www.fisheye-jp.com/_userdata/21352_aoi_UMG_webA5.pdf">https://www.fisheye-jp.com/_userdata/21352_aoi_UMG_webA5.pdf</a></li>
+    </ul>
+    <p class="small">ランプの点滅表示、手順のステップ、表、持ち方の図は、上の資料の記述をもとに HTML／CSS で作り直したものです。「補足」と書いた箇所は資料にない推測を含みます。</p>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>個人用の非公式まとめです。メーカーとは関係ありません。一度開くとオフラインでも表示できます（船上など電波がない場所向け）。</p>
+  </div>
+</footer>
+
+<button class="to-top" type="button" aria-label="ページの先頭へ" id="toTop">↑</button>
+<dialog class="lightbox" id="lightbox"><button type="button" aria-label="閉じる">✕</button><img alt=""></dialog>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "OM-1 水中撮影ガイド",
+  "short_name": "OM-1 Dive",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#07131d",
+  "theme_color": "#04324d",
+  "icons": [{ "src": "assets/img/icon.svg", "sizes": "any", "type": "image/svg+xml" }]
+}
