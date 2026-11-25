@@ -176,6 +176,12 @@ table.settings .tag { display: table; margin: 0 0 3px; }
 .path { display: block; font-size: .72rem; font-weight: 400; color: var(--muted); margin-top: 2px; line-height: 1.45; }
 .path-inline { font-size: .88em; background: var(--surface-2); border-radius: 5px; padding: 0 5px; }
 h4 { font-size: 1rem; margin: 6px 0 0; }
+#buttons h4 { margin: 18px 0 4px; padding-left: 8px; border-left: 4px solid var(--accent); }
+.after { display: block; margin-top: 4px; padding: 3px 8px; border-radius: 6px; font-size: .85rem; background: color-mix(in srgb, var(--ok) 12%, var(--surface)); color: var(--text); }
+@media (max-width: 600px) {
+  table.btnmap td:nth-child(2) { font-weight: 600; color: var(--accent); padding-top: 0; }
+  table.btnmap td:nth-child(2)::before { content: "→ カメラ："; color: var(--muted); font-weight: 400; }
+}
 @media (max-width: 600px) {
   table.settings thead { display: none; }
   table.settings, table.settings tbody, table.settings tr, table.settings th, table.settings td { display: block; width: 100%; min-width: 0; }
