@@ -168,6 +168,30 @@ main section { padding: 30px 0 8px; }
 .gear h3 { margin: 2px 0 6px; }
 .tag { display: inline-block; font-size: .72rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); margin-right: 4px; }
 
+/* ===== Camera settings ===== */
+.tag.rec { background: color-mix(in srgb, var(--ok) 16%, var(--surface)); color: var(--ok); }
+table.settings th { white-space: normal; min-width: 9em; }
+table.settings td:nth-child(2) { min-width: 8.5em; }
+table.settings .tag { display: table; margin: 0 0 3px; }
+.path { display: block; font-size: .72rem; font-weight: 400; color: var(--muted); margin-top: 2px; line-height: 1.45; }
+.path-inline { font-size: .88em; background: var(--surface-2); border-radius: 5px; padding: 0 5px; }
+h4 { font-size: 1rem; margin: 6px 0 0; }
+@media (max-width: 600px) {
+  table.settings thead { display: none; }
+  table.settings, table.settings tbody, table.settings tr, table.settings th, table.settings td { display: block; width: 100%; min-width: 0; }
+  table.settings tr { border: 1px solid var(--line); border-radius: 10px; margin-bottom: 8px; overflow: hidden; }
+  table.settings th, table.settings td { border: 0; }
+  table.settings td:last-child { color: var(--muted); font-size: .88rem; padding-top: 0; }
+}
+.dpad {
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-areas: ". u ." "l c r" ". d .";
+  gap: 4px; max-width: 280px; margin: 4px 0 8px; text-align: center; font-weight: 800;
+}
+.dpad span { background: var(--surface-2); border-radius: 8px; padding: 4px 2px; line-height: 1.3; }
+.dpad small { display: block; font-size: .66rem; font-weight: 600; color: var(--muted); }
+.dpad .u { grid-area: u; } .dpad .l { grid-area: l; } .dpad .c { grid-area: c; background: transparent; color: var(--muted); font-size: .75rem; align-self: center; }
+.dpad .r { grid-area: r; } .dpad .d { grid-area: d; }
+
 /* ===== Tables ===== */
 .table-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 8px 0; }
 table { border-collapse: collapse; width: 100%; font-size: .92rem; background: var(--surface); }

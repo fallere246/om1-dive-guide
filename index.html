@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>OM-1 水中撮影ガイド</title>
-<meta name="description" content="UH-OM1 II ハウジング + FLP-09 フラットポート + UMG-01 マグニファイヤーで OM-1 を海に持っていくときのセッティング・注意点・操作方法のまとめ。">
+<meta name="description" content="UH-OM1 II ハウジング + FLP-09 フラットポート + UMG-01 マグニファイヤーで OM-1 を海に持っていくときのセッティング・マクロ用カメラ設定・注意点・操作方法のまとめ。">
 <meta name="theme-color" content="#04324d">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
@@ -36,6 +36,7 @@
     <li><a href="#gear">機材</a></li>
     <li><a href="#packing">持ち物</a></li>
     <li><a href="#prep">前日準備</a></li>
+    <li><a href="#camera">カメラ設定</a></li>
     <li><a href="#setup">セッティング</a></li>
     <li><a href="#leds">ランプ早見表</a></li>
     <li><a href="#controls">操作部</a></li>
@@ -201,9 +202,10 @@
           <li>スーパーコンパネで<strong>「フォーカス設定」を「MF」</strong>にする。</li>
         </ol>
         <div class="callout note">
-          <span class="label">補足（説明書には書かれていない推測です）</span>
-          <p>ラバーリングでクラッチを止め、MFクラッチを無効にしておくと、水中でクラッチが勝手に動いてフォーカスの挙動が変わる心配がなくなります。そのうえで、ポートのノブでピントリングを回してマニュアルフォーカスします。</p>
+          <span class="label">なぜラバーリングと「MFクラッチ無効」が要るのか</span>
+          <p>カメラの説明書によると、MFクラッチを「無効」にするとフォーカスリングの位置に関係なく、カメラの［AF方式］どおりに動きます。ただし、無効のままリングが MF の位置にあると、リングを回してもピントは動きません（<a href="#src-om1">OM-1 説明書</a> p.149）。ラバーリングはリングを AF/MF の位置に止めておくためのもので、これでポートのノブからピントを操作できます。</p>
         </div>
+        <p class="small">ほかのカメラ設定は<a href="#camera">次の「カメラ設定」</a>にまとめています。</p>
       </div>
       <figure>
         <div class="img"><img class="zoomable" src="assets/img/manual/flp09-prep.jpg" alt="ラバーリングの装着とカメラ設定の図" loading="lazy"></div>
@@ -213,9 +215,150 @@
   </div>
 </section>
 
-<!-- ========== 4. セッティング ========== -->
+<!-- ========== 4. カメラ設定 ========== -->
+<section id="camera">
+  <div class="sec-head"><span class="no">4</span><h2>カメラ設定（マクロ）</h2></div>
+  <p class="lead">90mmマクロ＋FLP-09 で撮るときの OM-1 の設定です。ハウジングに入れると MENU が操作しにくくなるので、陸上で済ませ、最後にカスタムモード（C1〜C4）に登録しておきます。</p>
+  <div class="callout note">
+    <span class="label">このセクションの出典</span>
+    <p>メニューの場所とページ番号は <a href="#src-om1">OM-1 Mark II 取扱説明書（v1.2）</a> によるものです。初代 OM-1 では項目名や場所が違う場合があります。<span class="tag">必須</span>は FLP-09 の取付方法に書かれている設定、<span class="tag rec">おすすめ</span>は説明書の機能をもとに選んだこのページの提案です。</p>
+  </div>
+
+  <div class="card">
+    <h3>ピント合わせ</h3>
+    <div class="table-scroll">
+      <table class="settings">
+        <thead><tr><th>項目</th><th>設定</th><th>理由</th></tr></thead>
+        <tbody>
+          <tr><th>MFクラッチ<span class="path">AF › 7. MF › MFクラッチ（p.149）</span></th><td><span class="tag">必須</span><b>無効</b></td><td>レンズのリング位置ではなく、カメラの［AF方式］で AF と MF が決まるようにする。</td></tr>
+          <tr><th>AF方式<span class="path">スーパーコンパネ／AF › 1. AF › AF方式（p.100）</span></th><td><span class="tag">必須</span><b>MF</b></td><td>ポートのノブ（レンズのピントリング）でピントを合わせる。FLP-09 の取付方法の指定。</td></tr>
+          <tr><th>MF時のAF-ON動作<span class="path">AF › 1. AF › MF時のAF-ON動作（p.117）</span></th><td><span class="tag rec">おすすめ</span><b>AFする</b></td><td>MF のままでも、ハウジングの AF-ON レバーを押せば S-AF でピントを合わせられる。AF で大まかに合わせ、ノブで追い込む使い方ができる。</td></tr>
+          <tr><th>MFアシスト<span class="path">AF › 7. MF › MFアシスト（p.144）</span></th><td><span class="tag rec">おすすめ</span>ピーキング <b>On</b><br>拡大 好みで</td><td>ノブを回したときだけ、ピントの合っている輪郭に色が付く。拡大を On にすると、ノブを回すたびに画面が拡大される。</td></tr>
+          <tr><th>ピーキング表示設定<span class="path">AF › 7. MF › ピーキング表示設定（p.146）</span></th><td><span class="tag rec">おすすめ</span>色 <b>赤 か 黄</b></td><td>白・黒・赤・黄から選べる。青い水中の背景では赤か黄が目立つ（このページの提案）。表示中に INFO ボタンでも変えられる。</td></tr>
+          <tr><th>AFターゲットモード<span class="path">AF › 6. AFターゲットの設定/操作（p.107〜108）</span></th><td><span class="tag rec">おすすめ</span><b>Single</b> か <b>Small</b></td><td>マクロは狙った一点（目など）に合わせたいので、範囲の狭いターゲットにする。</td></tr>
+          <tr><th>被写体検出<span class="path">AF › 2. AF › 被写体検出（p.120）</span></th><td><span class="tag rec">おすすめ</span><b>Off</b></td><td>検出できるのは人物・モータースポーツ・飛行機・鉄道・鳥・犬猫だけで、魚やウミウシは対象外。</td></tr>
+          <tr><th>レリーズ優先<span class="path">AF › 1. AF › レリーズ優先（p.118）</span></th><td><span class="tag rec">おすすめ</span>S-AF <b>On</b></td><td>Off のままだと AF が合わないときにシャッターが切れない。マクロでは AF が迷いやすいので、自分の判断で切れるようにしておく。</td></tr>
+          <tr><th>レンズリセット<span class="path">AF › 7. MF › レンズリセット（p.151）</span></th><td><span class="tag rec">おすすめ</span><b>Off</b></td><td>電源を切っても、MF で合わせたピント位置がリセットされずに残る。</td></tr>
+          <tr><th>フォーカスリング<span class="path">AF › 7. MF › フォーカスリング（p.150）</span></th><td>好みで</td><td>ノブを回す向きとピントが動く向きの関係を逆にできる。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ハウジングから操作するためのボタン設定</h3>
+    <p>ハウジングの各部名称にマルチセレクターはありません。カメラの初期設定では、AFターゲットはマルチセレクターで動かし、十字ボタンには何も割り当てられていません（p.86、p.330）。そこで十字ボタンを使えるようにしておきます。</p>
+    <div class="table-scroll">
+      <table class="settings">
+        <thead><tr><th>項目</th><th>設定</th><th>できること</th></tr></thead>
+        <tbody>
+          <tr><th>十字ボタン<span class="path">C › 1. 操作 › ボタンの設定 › 静止画ボタン機能（p.329〜337）</span></th><td><span class="tag rec">おすすめ</span><b>ダイレクト機能</b></td><td>
+            <div class="dpad" aria-label="ダイレクト機能の割り当て">
+              <span class="u">↑<small>露出補正</small></span>
+              <span class="l">←<small>AFターゲット選択</small></span>
+              <span class="c">十字</span>
+              <span class="r">→<small>MF切換</small></span>
+              <span class="d">↓<small>WBモード</small></span>
+            </div>
+            → と ↓ はほかの機能にも変えられます。
+          </td></tr>
+          <tr><th>Fnレバー<span class="path">C › 1. 操作 › Fnレバーの設定 › 静止画Fnレバー機能（p.345〜346）</span></th><td><span class="tag rec">おすすめ</span><b>mode2</b></td><td>レバーの位置1と位置2に、それぞれ［AF方式］［AFターゲットモード］［AFターゲット位置］を覚えさせられる。たとえば位置1を「MF＋Small」、位置2を「S-AF＋Single」にすると、ハウジングの FN レバーだけで切り換えられる。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>ストロボ</h3>
+    <p>ハウジングのフラッシュトリガーは、ホットシューの信号を光に変えて光ファイバーで外部ストロボへ送ります（ハウジング説明書 p.15）。カメラ側はふつうの外部フラッシュと同じように設定します。</p>
+    <div class="table-scroll">
+      <table class="settings">
+        <thead><tr><th>撮り方</th><th>同調速度の上限</th></tr></thead>
+        <tbody>
+          <tr><th>通常（メカシャッター）</th><td><b class="num">1/250秒</b>（p.179）</td></tr>
+          <tr><th>静音撮影／フォーカスブラケット／深度合成</th><td><b class="num">1/100秒</b>（p.181、p.249）</td></tr>
+          <tr><th>上記で ISO 16000 以上</th><td><b class="num">1/50秒</b>（p.181）</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <ul>
+      <li><strong>RCモード対応の水中ストロボなら</strong>、<span class="path-inline">静止画1 › 6. フラッシュ › RCモード撮影（p.184）</span>を <b>On</b> にします。OK ボタンで RC 用のスーパーコンパネが出て、グループごとの調光モードや発光量を設定できます（p.472〜473）。ストロボ側も RC モードにして、チャンネルをカメラと合わせます。</li>
+      <li><strong>ワイヤレスRCフラッシュは低振動撮影と一緒に使えません</strong>（p.474）。RCモードで使うときは、ドライブを低振動撮影以外にします。</li>
+      <li>被写体が近いと、発光量を最小にしても明るすぎることがあります。A か M モードで絞りを絞るか、ISO 感度を下げます（p.181）。</li>
+      <li>静音撮影でストロボを光らせるには、<span class="path-inline">静止画1 › 7. ドライブモード › 静音撮影設定</span>の［フラッシュ］を［許可］にしておきます（p.191、p.196）。</li>
+      <li>セッティング時に、コントロールパネルのフラッシュマークが点灯しているか確認します（ハウジング説明書 p.11）。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>被写界深度を深くする（深度合成／Focus BKT）</h3>
+    <p>マクロは被写界深度がとても浅いので、ピント位置をずらしながら連続で撮る機能が使えます。どちらも電子シャッターの静音撮影で撮るため、ストロボの同調速度は 1/100秒になります。</p>
+    <div class="grid two">
+      <div>
+        <h4>深度合成</h4>
+        <p class="small">静止画2 › 1. コンピュテーショナル撮影 › 深度合成撮影（p.247〜249）</p>
+        <ul>
+          <li>ピントを合わせた位置の前後を 3〜15枚撮り、カメラの中で 1枚の JPEG に合成する。</li>
+          <li>合成後の画像は上下左右が約7%狭くなる。画面に出る枠の中に被写体を入れる。</li>
+          <li>撮影中にピントを動かすと、撮影が止まる。</li>
+          <li>合成に失敗すると、元の画像だけが保存される。</li>
+          <li>使えるのは深度合成に対応したレンズだけ。対応しているかは OM SYSTEM のサイトで確認する。</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Focus BKT（フォーカスブラケット）</h4>
+        <p class="small">静止画2 › 3. ブラケット撮影 › Focus BKT（p.274〜276）</p>
+        <ul>
+          <li>ピント位置をずらした画像を 3〜999枚撮る。合成はしないので、パソコンで合成する。</li>
+          <li>ピント位置は撮るたびに遠い方へ動き、無限遠まで行くと撮影が終わる。</li>
+          <li>撮影の途中でもう一度シャッターを全押しすると止まる。</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout warn">
+      <span class="label">水中で使うときの注意</span>
+      <p>説明書では、カメラぶれを抑えるためにリモコンの使用を勧めています（p.249）。水中の手持ちでは、何枚も撮っているあいだに自分や被写体が動いて失敗しやすいので、動かない被写体を、体を安定させて撮るときに使います（このページの補足）。</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>色・ぶれ・電源</h3>
+    <div class="table-scroll">
+      <table class="settings">
+        <thead><tr><th>項目</th><th>設定</th><th>理由</th></tr></thead>
+        <tbody>
+          <tr><th>ホワイトバランス<span class="path">静止画1 › 2. ピクチャーモード/WB › WBモード（p.225〜226）</span></th><td>ストロボ主体：<b>Auto</b> か <b>WBフラッシュ</b>（5500K）<br>自然光：<b>水中</b></td><td>「水中」は WB のプリセットのひとつ。ストロボの光が主になるマクロでは、フラッシュ相当の 5500K か Auto が基本。</td></tr>
+          <tr><th>ワンタッチWB<span class="path">WB設定画面でワンタッチWB1〜4 を選び INFO（p.228）</span></th><td>必要なら</td><td>白い板などを画面いっぱいに写して測る。登録した値は電源を切っても消えない。</td></tr>
+          <tr><th>ピクチャーモード<span class="path">静止画1 › 2. ピクチャーモード/WB（p.217〜218）</span></th><td>好みで <b>水中</b></td><td>水中写真に合った鮮やかな色に仕上がる。使うときは<span class="path-inline">静止画1 › 2. ピクチャーモード/WB › フラッシュ+WB連動（p.233）</span>を Off にするよう説明書に書かれている（On だと発光時に WB が Auto や 5500K に切り換わる）。</td></tr>
+          <tr><th>手ぶれ補正<span class="path">静止画1 › 8. 手ぶれ補正（p.201〜202）</span></th><td><b>S-IS AUTO</b> か <b>S-IS1</b></td><td>高倍率の撮影で起きやすい手ぶれを抑える。IS スイッチのあるレンズは、レンズ側の設定が優先される。</td></tr>
+          <tr><th>スリープ<span class="path">セットアップ › 5. 電池/スリープ › スリープ時間（p.402）</span></th><td>1分／3分／5分</td><td>ハウジングの MFU はカメラのスリープに合わせて眠り、カメラが起きると一緒に起きる（ハウジング説明書 p.15）。シャッター半押しで復帰する。</td></tr>
+          <tr><th>自動電源Off<span class="path">セットアップ › 5. 電池/スリープ › 自動電源Off（p.403）</span></th><td><span class="tag rec">おすすめ</span>長め（1時間など）</td><td>スリープのあとさらに時間がたつと電源が切れる。切れたら電源レバーで入れ直す必要がある。</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="card" data-checklist="camset">
+    <div class="list-head"><h3>設定チェック → C1 に登録</h3><span class="progress"></span></div>
+    <ul class="checklist">
+      <li><label><input type="checkbox" data-key="c-clutch"><span>MFクラッチ：無効</span></label></li>
+      <li><label><input type="checkbox" data-key="c-mf"><span>AF方式：MF</span></label></li>
+      <li><label><input type="checkbox" data-key="c-afon"><span>MF時のAF-ON動作：AFする</span></label></li>
+      <li><label><input type="checkbox" data-key="c-peak"><span>MFアシスト：ピーキング On</span></label></li>
+      <li><label><input type="checkbox" data-key="c-target"><span>AFターゲット：Single / Small、被写体検出 Off</span></label></li>
+      <li><label><input type="checkbox" data-key="c-dpad"><span>十字ボタン：ダイレクト機能、Fnレバー：mode2</span></label></li>
+      <li><label><input type="checkbox" data-key="c-flash"><span>RCモード撮影（RCストロボの場合）、ドライブは低振動以外</span></label></li>
+      <li><label><input type="checkbox" data-key="c-wb"><span>WB・ピクチャーモード・手ぶれ補正</span></label></li>
+      <li><label><input type="checkbox" data-key="c-c1"><span>撮影モード（A か M）にしてから C1 に登録<span class="why">静止画1 › 1. 基本設定/画質 › カスタムモード › C1 › カスタム登録 › 登録（p.75）。モードダイヤルを C1 にすれば呼び出せる</span></span></label></li>
+    </ul>
+    <p><button class="btn" type="button" data-reset="camset">リセット</button></p>
+    <p class="small">C1 で設定を変えても、初期設定ではモードダイヤルを回すと登録時の内容に戻ります。変えた内容を残したいときは［カスタム保持設定］を［保持する］にします（p.78）。</p>
+  </div>
+</section>
+
+<!-- ========== 5. セッティング ========== -->
 <section id="setup">
-  <div class="sec-head"><span class="no">4</span><h2>セッティング手順</h2></div>
+  <div class="sec-head"><span class="no">5</span><h2>セッティング手順</h2></div>
   <p class="lead">当日、カメラをハウジングに入れて水に入るまでの流れ。各ステップの「済」にチェックすると進み具合が残ります。</p>
   <div class="callout warn">
     <span class="label">場所を選ぶ</span>
@@ -253,7 +396,8 @@
       <div class="step-title"><h3>カメラとレンズを準備する</h3><label class="done-toggle"><input type="checkbox" data-key="s-campre">済</label></div>
       <ul>
         <li>ストラップ、アイキャップなどのアクセサリーを外す。</li>
-        <li>レンズにラバーリング FCBR-01 を付け、MFクラッチ「無効」、フォーカス「MF」（<a href="#prep">前日準備</a>参照）。</li>
+        <li>レンズにラバーリング FCBR-01 を付ける（<a href="#prep">前日準備</a>参照）。</li>
+        <li>モードダイヤルを、<a href="#camera">マクロ用の設定</a>を登録した C1 にする。</li>
         <li>バッテリーとメモリーカードを確認する。</li>
         <li><strong>カメラの電源を切る。</strong></li>
       </ul>
@@ -422,7 +566,7 @@
 
 <!-- ========== 5. LED ========== -->
 <section id="leds">
-  <div class="sec-head"><span class="no">5</span><h2>インジケーター早見表</h2></div>
+  <div class="sec-head"><span class="no">6</span><h2>インジケーター早見表</h2></div>
   <p class="lead">MFUのランプの点き方を再現しています。点滅の速さは説明書の記載（1回/秒、4回/秒）に合わせ、記載がないものは見分けやすい速さにしてあります。</p>
   <p><button class="btn" type="button" id="ledPause">点滅を止める</button></p>
 
@@ -474,7 +618,7 @@
 
 <!-- ========== 6. 操作部 ========== -->
 <section id="controls">
-  <div class="sec-head"><span class="no">6</span><h2>操作部の配置</h2></div>
+  <div class="sec-head"><span class="no">7</span><h2>操作部の配置</h2></div>
 
   <div class="card">
     <h3>持ち方</h3>
@@ -539,7 +683,7 @@
 
 <!-- ========== 7. 水中の注意 ========== -->
 <section id="dive">
-  <div class="sec-head"><span class="no">7</span><h2>エントリー・水中での注意</h2></div>
+  <div class="sec-head"><span class="no">8</span><h2>エントリー・水中での注意</h2></div>
   <div class="callout danger">
     <span class="label">安全第一</span>
     <p>撮影に夢中になると、重大な潜水事故につながりかねません。水深と潜水時間に十分注意してください。</p>
@@ -570,7 +714,7 @@
 
 <!-- ========== 8. ダイビング後 ========== -->
 <section id="after">
-  <div class="sec-head"><span class="no">8</span><h2>ダイビング後</h2></div>
+  <div class="sec-head"><span class="no">9</span><h2>ダイビング後</h2></div>
 
   <div class="card">
     <h3>ハウジングの開け方</h3>
@@ -649,7 +793,7 @@
 
 <!-- ========== 9. トラブル ========== -->
 <section id="trouble">
-  <div class="sec-head"><span class="no">9</span><h2>トラブルのとき</h2></div>
+  <div class="sec-head"><span class="no">10</span><h2>トラブルのとき</h2></div>
   <div class="card">
     <h3><span class="led red" style="display:inline-block;width:14px;height:14px;vertical-align:-1px"></span> 赤点灯＋ブザー（浸水を検出）</h3>
     <ul>
@@ -686,12 +830,13 @@
 <section id="sources">
   <div class="sec-head"><span class="no">i</span><h2>出典</h2></div>
   <div class="card sources">
-    <p>このページの内容は、以下の株式会社フィッシュアイ（AOI 製品の国内販売元）の公開資料をもとに個人用にまとめたものです。製品写真と取扱説明書の図版の著作権は株式会社フィッシュアイと各権利者に帰属します。正確な情報は必ず原典を確認してください。</p>
+    <p>このページの内容は、以下の株式会社フィッシュアイ（AOI 製品の国内販売元）の公開資料と OM-1 Mark II の取扱説明書をもとに個人用にまとめたものです。製品写真と取扱説明書の図版の著作権は株式会社フィッシュアイと各権利者に帰属します。正確な情報は必ず原典を確認してください。</p>
     <ul>
       <li id="src-manual">UH-OM1 II 取扱説明書（20240802 版）<br><a href="https://www.fisheye-jp.com/_userdata/10561_UH-OM1ii.pdf">https://www.fisheye-jp.com/_userdata/10561_UH-OM1ii.pdf</a></li>
       <li id="src-housing">UH-OM1 II OM SYSTEM OM1/OM1 Mark II 製品ページ<br><a href="https://www.fisheye-jp.com/products/uh-om1ii.html">https://www.fisheye-jp.com/products/uh-om1ii.html</a></li>
       <li id="src-flp09">FLP-09 PENマウントフラットポート 製品ページ／取付方法（202504 版）<br><a href="https://www.fisheye-jp.com/products/flp-09.html">https://www.fisheye-jp.com/products/flp-09.html</a><br><a href="https://www.fisheye-jp.com/_userdata/21558_FLP-09_Installation.pdf">https://www.fisheye-jp.com/_userdata/21558_FLP-09_Installation.pdf</a></li>
       <li id="src-umg">UMG-01 マグニファイヤー 製品ページ／調整方法（20230609 版）<br><a href="https://www.fisheye-jp.com/products/umg_01.html">https://www.fisheye-jp.com/products/umg_01.html</a><br><a href="https://www.fisheye-jp.com/_userdata/21352_aoi_UMG_webA5.pdf">https://www.fisheye-jp.com/_userdata/21352_aoi_UMG_webA5.pdf</a></li>
+      <li id="src-om1">OM SYSTEM OM-1 Mark II 取扱説明書（v1.2、OMデジタルソリューションズ）<br><a href="https://download.omsystem.com/pages/inst/om1m2/manual_om1m2_v1.2_JPN.pdf">https://download.omsystem.com/pages/inst/om1m2/manual_om1m2_v1.2_JPN.pdf</a><br><span class="small">「カメラ設定」セクションのページ番号はこの説明書のもの。図版は転載していません。</span></li>
     </ul>
     <p class="small">ランプの点滅表示、手順のステップ、表、持ち方の図は、上の資料の記述をもとに HTML／CSS で作り直したものです。「補足」と書いた箇所は資料にない推測を含みます。</p>
   </div>
