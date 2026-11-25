@@ -127,7 +127,12 @@
       if (!e.isIntersecting) return;
       links.forEach((a) => a.classList.remove('active'));
       const a = map.get(e.target.id);
-      if (a) { a.classList.add('active'); a.scrollIntoView({ block: 'nearest', inline: 'center' }); }
+      if (a) {
+        a.classList.add('active');
+        // scrollIntoView は sticky の目次ごとページを縦に動かしてしまうので、目次の横スクロールだけを動かす
+        const ul = a.parentElement.parentElement;
+        ul.scrollTo({ left: a.offsetLeft - ul.offsetLeft - (ul.clientWidth - a.offsetWidth) / 2, behavior: 'smooth' });
+      }
     });
   }, { rootMargin: '-45% 0px -50% 0px' });
   document.querySelectorAll('main section[id]').forEach((s) => io.observe(s));
