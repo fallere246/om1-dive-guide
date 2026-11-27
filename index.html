@@ -322,11 +322,12 @@
   </div>
 
   <div class="card">
-    <h3>色・ぶれ・電源</h3>
+    <h3>表示・色・ぶれ・電源</h3>
     <div class="table-scroll">
       <table class="settings">
         <thead><tr><th>項目</th><th>設定</th><th>理由</th></tr></thead>
         <tbody>
+          <tr><th>EVF自動切換設定<span class="path">セットアップ › 3. モニター/音/接続 › アイセンサーの設定 › EVF自動切換設定（p.393）</span></th><td><span class="tag rec">おすすめ</span><b>Off</b></td><td>初期設定は On で、アイセンサーに何かが近づくと表示がファインダーに切り換わり、モニターが消える（p.48）。ハウジングに入れるとアイセンサーがハウジングの壁でふさがれ、モニターが映らなくなることがある。Off にすると、LV ボタンを押したときだけ表示が切り換わる。LV ボタンを長押しすると、この設定画面を直接開ける（p.333、p.393）。<br>この設定はカスタムモード（C1）に登録されない（p.538）ので、陸上に戻ったら On に戻す。</td></tr>
           <tr><th>ホワイトバランス<span class="path">静止画1 › 2. ピクチャーモード/WB › WBモード（p.225〜226）</span></th><td>ストロボ主体：<b>Auto</b> か <b>WBフラッシュ</b>（5500K）<br>自然光：<b>水中</b></td><td>「水中」は WB のプリセットのひとつ。ストロボの光が主になるマクロでは、フラッシュ相当の 5500K か Auto が基本。</td></tr>
           <tr><th>ワンタッチWB<span class="path">WB設定画面でワンタッチWB1〜4 を選び INFO（p.228）</span></th><td>必要なら</td><td>白い板などを画面いっぱいに写して測る。登録した値は電源を切っても消えない。</td></tr>
           <tr><th>ピクチャーモード<span class="path">静止画1 › 2. ピクチャーモード/WB（p.217〜218）</span></th><td>好みで <b>水中</b></td><td>水中写真に合った鮮やかな色に仕上がる。使うときは<span class="path-inline">静止画1 › 2. ピクチャーモード/WB › フラッシュ+WB連動（p.233）</span>を Off にするよう説明書に書かれている（On だと発光時に WB が Auto や 5500K に切り換わる）。</td></tr>
@@ -348,6 +349,7 @@
       <li><label><input type="checkbox" data-key="c-target"><span>AFターゲット：Single / Small、被写体検出 Off</span></label></li>
       <li><label><input type="checkbox" data-key="c-dpad"><span>十字ボタン：ダイレクト機能、Fnレバー：mode2</span></label></li>
       <li><label><input type="checkbox" data-key="c-flash"><span>RCモード撮影（RCストロボの場合）、ドライブは低振動以外</span></label></li>
+      <li><label><input type="checkbox" data-key="c-evf"><span>EVF自動切換設定：Off<span class="why">C1 には登録されないので、ここで直接設定する（p.538）</span></span></label></li>
       <li><label><input type="checkbox" data-key="c-wb"><span>WB・ピクチャーモード・手ぶれ補正</span></label></li>
       <li><label><input type="checkbox" data-key="c-c1"><span>撮影モード（A か M）にしてから C1 に登録<span class="why">静止画1 › 1. 基本設定/画質 › カスタムモード › C1 › カスタム登録 › 登録（p.75）。モードダイヤルを C1 にすれば呼び出せる</span></span></label></li>
     </ul>
@@ -398,6 +400,7 @@
         <li>ストラップ、アイキャップなどのアクセサリーを外す。</li>
         <li>レンズにラバーリング FCBR-01 を付ける（<a href="#prep">前日準備</a>参照）。</li>
         <li>モードダイヤルを、<a href="#camera">マクロ用の設定</a>を登録した C1 にする。</li>
+        <li><strong>EVF自動切換設定が Off になっているか</strong>確かめる（C1 には登録されないため。<a href="#camera">カメラ設定</a>参照）。</li>
         <li>バッテリーとメモリーカードを確認する。</li>
         <li><strong>カメラの電源を切る。</strong></li>
       </ul>
@@ -669,7 +672,7 @@
           <tr><th>ISOボタン</th><td>ISO／レーティングボタン</td><td>撮影時は ISO 感度（p.165）、再生時はレーティング（p.308）。</td></tr>
           <tr><th>モードダイヤル</th><td>モードダイヤル</td><td>撮影モード（P／A／S／M／B／動画／C1〜C4）を選ぶ（p.52）。</td></tr>
           <tr><th>MENUボタン</th><td>MENU ボタン</td><td>メニューを開く（p.97）。</td></tr>
-          <tr><th>LVボタン</th><td>LV ボタン</td><td>表示先をモニター／ファインダーで切り換える（p.48）。ハウジングではモニターを見るので、誤って押したら押し直す。</td></tr>
+          <tr><th>LVボタン</th><td>LV ボタン</td><td>初期設定（EVF自動切換設定 On）では、モニターの表示をスーパーコンパネとライブビューで切り換える（p.48）。長押しすると［EVF自動切換設定］の画面が開く（p.333）。<span class="after">設定後（EVF自動切換設定 Off）：モニターとファインダーの表示を切り換える（p.333）。モニターが消えたら、もう一度押す</span></td></tr>
           <tr><th>INFOボタン</th><td>INFO ボタン</td><td>画面の情報表示を切り換える（p.50）。ピーキング表示中は、色や強さの設定を開く（p.145）。</td></tr>
           <tr><th>↑↓←→ボタン</th><td>十字ボタン</td><td>撮影時の初期設定は機能なし（p.86）。再生時は画像送り（p.290）。<span class="after">設定後（ダイレクト機能）：← AFターゲット選択／↑ 露出補正／→ MF切換／↓ WBモード（p.337）</span></td></tr>
           <tr><th>再生ボタン</th><td>再生ボタン</td><td>撮った画像を見る（p.290）。</td></tr>
@@ -850,6 +853,7 @@
     <ul>
       <li>現地の塩抜きだけで終わらせず、<strong>帰宅後にも必ず</strong>手入れをする。</li>
       <li>長く使わないときは、Oリングに付属のシリコングリスを薄く塗って保管する。</li>
+      <li>陸上でファインダーを使うなら、EVF自動切換設定を On に戻す（LV ボタンを長押しすると設定画面が開く）。</li>
       <li>長く使わないときはカメラをハウジングから出しておく（電池トラブルで発火するおそれがあるため）。</li>
       <li>Oリングは<strong>1年ごと</strong>の交換、ハウジングは使用頻度に応じて<strong>2〜3年に1度</strong>のオーバーホールがおすすめ。</li>
       <li>極端な高温・低温、急な温度変化のある場所や、直射日光の当たる場所に置かない。</li>

@@ -1,5 +1,5 @@
 // アセットを変更したら VERSION を上げる（古いキャッシュを捨てるため）
-const VERSION = 'v4';
+const VERSION = 'v5';
 const ASSETS = [
   './', 'index.html', 'manifest.webmanifest', 'assets/css/style.css', 'assets/js/app.js',
   'assets/img/icon.svg',
